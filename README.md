@@ -1,4 +1,5 @@
 <h1>!!!NOT FINISHED!!!</h1>
+<img src="photos/ss.png" style="width=100%;height=100vh" />
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
