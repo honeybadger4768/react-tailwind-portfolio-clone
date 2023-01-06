@@ -1,15 +1,24 @@
-import BottomBar from 'components/BottomBar';
-import Container from 'components/Container';
-import Header from 'components/Header';
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import MainTemplate from 'components/MainTemplate';
+import { routes } from 'global';
+
+
 
 function App() {
   return (
-    <div className="w-full h-screen pt-32">
-      <Header />
-      <Container />
-      <BottomBar />
-    </div>
+    <Routes>
+      <Route path='/' element={<MainTemplate />}>
+        {routes.map((route, i) =>{
+          let props = {
+            path: route.link,
+            element: route.component
+          }
+
+          return <Route {...props} />
+        })}
+      </Route>
+    </Routes>
   );
 }
 

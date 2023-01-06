@@ -12,6 +12,9 @@ module.exports = {
       },
       textColor: {
         "blue-my": "#2e70fc"
+      },
+      borderColor: {
+        "blue-my": "#0050ff"
       }
     },
   },
